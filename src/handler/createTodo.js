@@ -16,7 +16,7 @@ module.exports.createTodo = (event, context, callback) => {
     const data = JSON.parse(event.body);
 
     if( typeof data.task !== 'string' ) {
-        console.error('Task is not a string');
+        console.error("Task isn't a string");
         const response = {
             statusCode: 400,
             body: JSON.stringify({ "message":"Task is not a string." })
