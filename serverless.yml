@@ -5,7 +5,7 @@ provider:
   name: aws
   runtime: nodejs14.x
   region: ap-south-1
-  deploymentBucket: api_photography
+  deploymentBucket: photographybackend
   logRetentionInDays: 1
   iamRoleStatements:
     - Effect: Allow
